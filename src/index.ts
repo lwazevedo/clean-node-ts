@@ -1,6 +1,6 @@
 class Initial {
   start() {
-    return 'up'
+    return 'up-x'
   }
 }
 
