@@ -1,3 +1,7 @@
 {
-  "*.ts": ["yarn lint:fix", "yarn prettier --write './src/**/*.ts' --fix"]
+  "*.ts": [
+    "yarn lint:fix",
+    "yarn prettier --check './src/**/*.ts'",
+    "yarn vitest"
+  ]
 }
