@@ -6,4 +6,8 @@ describe('test vitest', () => {
     const init = new Initial()
     expect(init.start()).toBe('up-x')
   })
+  it('should create new initial and return loading', () => {
+    const init = new Initial()
+    expect(init.loading()).toBe('loading')
+  })
 })
