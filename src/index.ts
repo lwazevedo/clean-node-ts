@@ -1,10 +1,9 @@
-class Initial {
-  start() {
-    return 'up-x'
-  }
-  loading() {
-    return 'loading'
-  }
+import { ExpressWebServer } from './infra/web-server/express-web-server'
+
+const init = () => {
+  const server = new ExpressWebServer()
+  server.addRoute('get', '/', () => 'hellow')
+  server.start(3000)
 }
 
-export default Initial
+init()
