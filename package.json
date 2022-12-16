@@ -10,13 +10,11 @@
     "husky:prepare": "husky install",
     "lint": "eslint 'src/**'",
     "lint:fix": "eslint 'src/**' --fix",
-    "format:check": "prettier --check 'src/**/*.ts'",
-    "format": "prettier --write 'src/**/*.ts'",
     "test": "vitest --passWithNoTests",
     "test:staged": "yarn test --run",
     "test:cov": "vitest run --coverage",
-    "style:check": "prettier --check './src/**/*.ts'",
-    "style:fix": "prettier --write './src/**/*.ts'"
+    "style:check": "prettier --ignore-path --check 'src/**/*.ts'",
+    "style:fix": "prettier --write 'src/**/*.ts'"
   },
   "repository": {
     "type": "git",
