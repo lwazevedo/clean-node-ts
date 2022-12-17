@@ -1,3 +1,4 @@
 *.config.ts
 # Ignore artifacts:
 **/coverage/**/*
+**/dist/**/*

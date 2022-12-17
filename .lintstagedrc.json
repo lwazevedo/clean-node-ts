@@ -1,7 +1,3 @@
 {
-  "*.ts": [
-    "yarn lint:fix",
-    "yarn prettier --ignore-path --check 'src/**/*.ts'",
-    "yarn test:staged"
-  ]
+  "*.ts": ["yarn lint:fix", "yarn test:check", "yarn test:staged"]
 }
