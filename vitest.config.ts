@@ -9,6 +9,6 @@ export default defineConfig({
     },
   },
   test: {
-    exclude: [...configDefaults.exclude, '**/src/**']
+    exclude: [...configDefaults.exclude, '**/test/**']
   }
 })
