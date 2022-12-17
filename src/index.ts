@@ -1,4 +1,4 @@
-import { ExpressWebServer } from './infra/web-server/express-web-server'
+import { ExpressWebServer } from '@src/infra/web-server/express-web-server'
 
 const init = () => {
   const server = new ExpressWebServer()

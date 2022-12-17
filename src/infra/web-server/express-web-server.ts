@@ -1,4 +1,4 @@
-import { TMethod, WebServer } from '../../domain/web-server/web-server'
+import { TMethod, WebServer } from '@src/domain/web-server/web-server'
 import express, { Express, Request, Response } from 'express'
 
 export class ExpressWebServer implements WebServer {
