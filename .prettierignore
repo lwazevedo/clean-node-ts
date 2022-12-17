@@ -1,5 +1,5 @@
-vite.config.ts
-vitest.config.ts
+*vite.config.ts
+*vitest.config.ts
 dist
 node_modules
 coverage
