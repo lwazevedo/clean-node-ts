@@ -9,6 +9,14 @@ export default defineConfig({
     },
   },
   test: {
-    exclude: [...configDefaults.exclude, '**/test/**']
+    exclude: [...configDefaults.exclude, '**/test/**'],
+    coverage: {
+      exclude: [...configDefaults.exclude, '**/main/**', '**/test/**', '**/domain/**', '**/infra/web-server/**'],
+      all: true,
+      lines: 0,
+      branches: 0,
+      statements: 0,
+      functions: 0
+    }
   }
 })
