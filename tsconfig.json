@@ -1,8 +1,17 @@
 {
   "compilerOptions": {
     "incremental": true,
+    "lib": ["es2021"],
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "resolveJsonModule": true,
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "allowSyntheticDefaultImports": true,
     "outDir": "dist",
-    "rootDirs": ["src", "tests"],
+    "rootDirs": ["./src", "./tests"],
     "target": "es2021",
     "sourceMap": true,
     "skipLibCheck": true,
@@ -10,7 +19,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "baseUrl": "src",
+    "baseUrl": "./",
     "paths": {
       "@/*": ["*"],
       "@/tests/*": ["../tests/*"]
@@ -21,5 +30,5 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
-  "include": ["src", "tests"]
+  "include": ["./src/**/*.ts", "./tests/**/*.ts"]
 }
